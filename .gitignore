@@ -44,3 +44,5 @@ pnpm-lock.yaml
 yarn.lock
 
 postgres/
+
+*storybook.log
