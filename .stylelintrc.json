@@ -1,0 +1,27 @@
+{
+    "extends": [
+        "stylelint-config-standard",
+        "stylelint-config-standard-scss",
+        "stylelint-config-prettier-scss",
+        "stylelint-8-point-grid"
+    ],
+    "plugins": [
+        "stylelint-scss",
+        "stylelint-selector-bem-pattern",
+        "stylelint-config-two-dash-bem"
+    ],
+    "rules": {
+        "plugin/8-point-grid": {
+            "base": 4,
+            "allowlist": ["2px", "1px", "0.0625rem"],
+            "ignorelist": ["width", "height"]
+            },
+        "plugin/selector-bem-pattern": {
+            "componentName": "[aA-zZ]+",
+            "componentSelectors": {
+                "initial": "^\\.{componentName}(?:-[a-z]+)?$"
+            },
+            "utilitySelectors": "^\\.--[a-z]+$"
+        }
+  }
+}
