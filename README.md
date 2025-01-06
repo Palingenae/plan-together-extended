@@ -17,7 +17,7 @@ This time the stack will be:
   - Symfony
     - Security
     - Authentication
-  - PostgresSQL
+  - MariaDB
 - Front-End / Web App :
   - NextJS
   - Sass/Scss
