@@ -2,3 +2,5 @@
 .idea
 
 mailpit/data
+
+api/.env.*
