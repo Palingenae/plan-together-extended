@@ -1,6 +1,7 @@
 .env
 .idea
 
-mailpit/data
+docker/mailpit/data
+docker/db/data/
 
 api/.env.*
