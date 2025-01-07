@@ -4,6 +4,7 @@ RUN apt update && \
     apt install -y \
     libzip-dev \
     wget \
+    unzip \
     git && \
     pecl install apcu && \
     docker-php-ext-install pdo_mysql && \
