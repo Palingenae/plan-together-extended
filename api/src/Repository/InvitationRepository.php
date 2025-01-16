@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Repository;
+namespace Api\Repository;
 
-use App\Entity\Invitation;
+use Api\Entity\Invitation;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
 

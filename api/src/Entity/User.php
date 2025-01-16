@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Entity;
+namespace Api\Entity;
 
-use App\Repository\UserRepository;
+use Api\Repository\UserRepository;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
@@ -47,7 +47,7 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     private ?string $phoneNumber = null;
 
     #[ORM\Column(length: 16)]
-    private ?string $signUpDate = null;
+    private ?\DateTime $signUpDate = null;
 
     /**
      * @var Collection<int, Group>
@@ -190,12 +190,12 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
         return $this;
     }
 
-    public function getSignUpDate(): ?string
+    public function getSignUpDate(): ?\DateTime
     {
         return $this->signUpDate;
     }
 
-    public function setSignUpDate(string $signUpDate): static
+    public function setSignUpDate(\DateTime $signUpDate): static
     {
         $this->signUpDate = $signUpDate;
 

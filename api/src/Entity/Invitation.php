@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Entity;
+namespace Api\Entity;
 
-use App\Repository\InvitationRepository;
+use Api\Repository\InvitationRepository;
 use Doctrine\ORM\Mapping as ORM;
 
 #[ORM\Entity(repositoryClass: InvitationRepository::class)]
